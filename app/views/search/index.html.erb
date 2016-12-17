@@ -1,0 +1,21 @@
+<div class="container">
+  <% @stations.each do |station| %>
+    <div class="station">
+      <p>
+        <%= station.name %>
+      </p>
+      <p>
+        <%= station.address %>
+      </p>
+      <p>
+        <%= station.fuel_type %>
+      </p>
+      <p>
+        <%= station.distance %>
+      </p>
+      <p>
+        <%= station.access_times %>
+      </p>
+    </div>
+  <% end %>
+</div>
